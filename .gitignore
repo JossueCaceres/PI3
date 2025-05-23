@@ -1,0 +1,12 @@
+# Ignora archivos de entorno y temporales
+.env
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.swp
+*.swo
+*.DS_Store
+storage/*.ino
+storage/*.json
+storage/*.md

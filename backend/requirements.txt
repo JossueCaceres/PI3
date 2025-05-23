@@ -1,0 +1,5 @@
+# Requerimientos para el backend
+Flask
+openai
+requests
+pymongo

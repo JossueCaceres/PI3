@@ -1,0 +1,3 @@
+{
+  "bb2eaabc-2e26-4322-a6a7-19e4ab91ce75": "INSERT INTO componentes (nombre, cantidad) VALUES \n('Arduino UNO', 1),\n('Protoboard', 1),\n('LED', 3),\n('Resistencia', 3),\n('Jumpers', 7);"
+}
