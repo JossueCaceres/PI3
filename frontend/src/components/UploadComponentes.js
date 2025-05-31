@@ -1,1 +1,1 @@
-# Componente para subir o pegar la lista de componentes
+// Componente para subir o pegar la lista de componentes

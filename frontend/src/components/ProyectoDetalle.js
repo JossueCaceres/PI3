@@ -1,1 +1,1 @@
-# Componente para mostrar el detalle de un proyecto sugerido
+// Componente para mostrar el detalle de un proyecto sugerido

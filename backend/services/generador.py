@@ -136,6 +136,7 @@ def generar_proyectos(componentes):
 
 # Test manual
 if __name__ == "__main__":
+    # Aqui debe de ir la lista de componentes detectados por el modelo de CV 
     componentes = [{"nombre": "Arduino UNO", "cantidad": 1}, {"nombre": "Protoboard", "cantidad": 1}, {"nombre": "LED", "cantidad": 3}, {"nombre": "Resistencia", "cantidad": 3}, {"nombre": "Jumpers", "cantidad": 10}]
     proyectos = generar_proyectos(componentes)
     for p in proyectos:

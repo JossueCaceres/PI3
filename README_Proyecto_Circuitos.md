@@ -11,15 +11,11 @@ Diseñar e implementar una plataforma que, a partir del reconocimiento visual de
 El sistema debe reconocer y trabajar inicialmente con los siguientes elementos:
 
 - Arduino UNO  
-- Protoboard  
-- Jumpers  
+- Protoboard    
 - Resistencias (sin valor detectado)  
-- LEDs (1 a 3)  
-- Sensor de temperatura (LM35)  
+- LEDs (1 a 3)    
 - Sensor ultrasónico (HC-SR04)  
-- Fotoresistor (LDR)  
-- Motor DC con ruedas  
-- Baterías y porta baterías  
+- Potenciometro
 
 ---
 

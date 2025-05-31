@@ -7,6 +7,7 @@ circuitos_bp = Blueprint('circuitos', __name__)
 
 @circuitos_bp.route('/api/componentes', methods=['POST'])
 def recibir_componentes():
+    # Endpoint para recibir una lista de componentes(Del Frontend utilizando cv_model.py) y generar proyectos
     data = request.json
     componentes = data.get('componentes', [])
     proyectos = generar_proyectos(componentes)
