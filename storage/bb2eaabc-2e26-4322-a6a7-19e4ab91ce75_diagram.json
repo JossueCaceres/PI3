@@ -13,7 +13,7 @@
     { "type": "wokwi-resistor", "id": "r3", "top": 195, "left": 480, "attrs": { "value": "220" } }
   ],
   "connections": [
-    // LED1 (Rojo)
+    
     [ "uno:8", "bb1:7t.e", "green", [ "v0", "h125" ] ],
     [ "bb1:7t.g", "led1:A", "green", [ "h0" ] ],
     [ "led1:C", "bb1:8t.f", "black", [ "v0" ] ],
@@ -21,7 +21,6 @@
     [ "r1:2", "bb1:21t.e", "black", [ "h0" ] ],
     [ "bb1:21t.e", "uno:GND", "black", [ "h-125", "v-60" ] ],
 
-    // LED2 (Verde)
     [ "uno:9", "bb1:10t.e", "blue", [ "v0", "h125" ] ],
     [ "bb1:10t.g", "led2:A", "blue", [ "h0" ] ],
     [ "led2:C", "bb1:11t.f", "black", [ "v0" ] ],
@@ -29,8 +28,7 @@
     [ "r2:2", "bb1:23t.e", "black", [ "h0" ] ],
     [ "bb1:23t.e", "uno:GND", "black", [ "h-125", "v-60" ] ],
 
-    // LED3 (Azul)
-    [ "uno:10", "bb1:13t.e", "red", [ "v0", "h125" ] ],
+
     [ "bb1:13t.g", "led3:A", "red", [ "h0" ] ],
     [ "led3:C", "bb1:14t.f", "black", [ "v0" ] ],
     [ "bb1:14t.h", "r3:1", "black", [ "h0" ] ],

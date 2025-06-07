@@ -1,6 +1,7 @@
 from flask import Flask, jsonify
 from controllers.circuitos import circuitos_bp
 
+#Inicia o crea tu backend server de Flask
 app = Flask(__name__)
 app.register_blueprint(circuitos_bp)
 

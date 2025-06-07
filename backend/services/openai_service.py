@@ -4,7 +4,7 @@ import os
 import sys
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from openai import OpenAI
-from backend.config import GITHUB_TOKEN, GITHUB_AI_ENDPOINT, GITHUB_AI_MODEL
+from config import GITHUB_TOKEN, GITHUB_AI_ENDPOINT, GITHUB_AI_MODEL
 from dotenv import load_dotenv
 load_dotenv()
 

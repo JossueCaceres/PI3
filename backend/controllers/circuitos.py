@@ -2,6 +2,7 @@
 
 from flask import Blueprint, request, jsonify
 from services.generador import generar_proyectos
+from services.cv_model import predecir_componentes
 
 circuitos_bp = Blueprint('circuitos', __name__)
 
@@ -15,3 +16,22 @@ def recibir_componentes():
     if any('error' in p for p in proyectos):
         return jsonify({"error": "Límite diario de generación alcanzado. Intenta de nuevo mañana.", "proyectos": proyectos}), 429
     return jsonify({"proyectos": proyectos})
+
+
+@circuitos_bp.route('/api/imagenes', methods=['POST'])
+def recibir_imagenes():
+    # Endpoint para recibir una lista de imágenes y generar proyectos
+    imagenes = request.files.getlist('imagenes')
+    if not imagenes:
+        return jsonify({"error": "No se recibieron imágenes"}), 400
+    
+    # Aquí deberías llamar a tu función de predicción de componentes
+    componentes, ids = predecir_componentes(imagenes)
+    
+    return jsonify({
+        "componentes": componentes,
+        "ids": list(ids)
+    })
+
+    #componentes = {"resistor": 2, "capacitor": 1}
+    #ids = [1, 2, 3]
