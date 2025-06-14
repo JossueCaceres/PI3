@@ -34,4 +34,4 @@ def recibir_imagenes():
     })
 
     #componentes = {"resistor": 2, "capacitor": 1}
-    #ids = [1, 2, 3]
+    #ids = [1, 1, 3]
