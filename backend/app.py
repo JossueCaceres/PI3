@@ -1,8 +1,10 @@
 from flask import Flask, jsonify
+from flask_cors import CORS
 from controllers.circuitos import circuitos_bp
 
 #Inicia o crea tu backend server de Flask
 app = Flask(__name__)
+CORS(app)
 app.register_blueprint(circuitos_bp)
 
 @app.errorhandler(429)

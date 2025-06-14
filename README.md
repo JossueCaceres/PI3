@@ -95,3 +95,22 @@ Docs explain the project.
 
 
 Your next step is to implement your CV model in cv_model.py and connect it to your API so users can upload images and get component predictions
+
+# Dependencias y librerias a instalar
+## Backend
+
+## Frontend 
+1. npm (No chocolateley): [Nodejs](https://nodejs.org/es) 
+2. CORS: pip install flask-cors
+
+# Pasos para encendido de la aplicacion 
+1. Run app.py
+Se runea app.py en algun terminal 1. Este archivo genera el servidor Backend que necesitamos para obtener los resultados del modelo de Vision Computacional y los resultados de la API de OpenIA(sus respuestas). 
+
+Activa los endpoints del backend para que un cliente puede accerder a estas funciones. Es necesario su ruta HTTP. 
+
+### Carpeta test 
+Esta carpeta contiene una carpeta de imagenes y un archivo .py. El archivo .py simula ser un cliente y pide un request para el servidor ya activado. 
+
+2. Run npm start
+Se runea la pagina web que creamos. La direccion en la que debemos de estar en el terminal debe ser: ""
