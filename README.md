@@ -98,10 +98,17 @@ Your next step is to implement your CV model in cv_model.py and connect it to yo
 
 # Dependencias y librerias a instalar
 ## Backend
+1. Flask
+2. PIL
+3. inference_sdk
+4. io(creo que ya esta predeterminado)
+5. openia
+6. dotenv
+7. flask cors: pip install Flask-Cors
 
 ## Frontend 
 1. npm (No chocolateley): [Nodejs](https://nodejs.org/es) 
-2. CORS: pip install flask-cors
+
 
 # Pasos para encendido de la aplicacion 
 1. Run app.py
@@ -113,4 +120,7 @@ Activa los endpoints del backend para que un cliente puede accerder a estas func
 Esta carpeta contiene una carpeta de imagenes y un archivo .py. El archivo .py simula ser un cliente y pide un request para el servidor ya activado. 
 
 2. Run npm start
-Se runea la pagina web que creamos. La direccion en la que debemos de estar en el terminal debe ser: ""
+Insertamos este comando en un terminal de preferencia (yo utilice Git Bash). Es importante que se runee este comando en la carpeta "frontend", sino no funciona. Este comando nos redireccionara a nuestro browser con la pagina web creada.   
+
+# Recordatorio
+Instala las librerias que necesites en el interprete de python correcto. Puede que lo estes instalando en otro que no uses en tu IDE.
