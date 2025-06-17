@@ -1,9 +1,10 @@
 import os
+import sys
 import uuid
 import re
 import json as pyjson
 from concurrent.futures import ThreadPoolExecutor
-from services.openai_service import chatgpt_test, chatgpt_test_token
+from openai_service import chatgpt_test, chatgpt_test_token
 from openai import RateLimitError
 
 def generar_proyectos(componentes):
@@ -57,8 +58,11 @@ def generar_proyectos(componentes):
     output_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '../../storage'))
     os.makedirs(output_dir, exist_ok=True)
 
+    # Calcula la ruta del directorio raiz
+    root_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+    sys.path.append(root_dir)
     # Selección de tokens para paralelismo
-    from backend.config import GITHUB_TOKEN, GITHUB_TOKEN2, GITHUB_TOKEN3
+    from config import GITHUB_TOKEN, GITHUB_TOKEN2, GITHUB_TOKEN3
     tokens = [
         GITHUB_TOKEN,
         GITHUB_TOKEN2,
