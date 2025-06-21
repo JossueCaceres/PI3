@@ -105,6 +105,7 @@ Your next step is to implement your CV model in cv_model.py and connect it to yo
 5. openia
 6. dotenv
 7. flask cors: pip install Flask-Cors
+8. Postman: Pagina Web que te sirve para generar HTTP Requests
 
 ## Frontend 
 1. npm (No chocolateley): [Nodejs](https://nodejs.org/es) 

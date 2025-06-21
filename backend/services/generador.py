@@ -4,7 +4,12 @@ import uuid
 import re
 import json as pyjson
 from concurrent.futures import ThreadPoolExecutor
-from openai_service import chatgpt_test, chatgpt_test_token
+#Si estas corriendo solo "generador.py"
+#from open_services import chatgpt_test_token 
+
+#Si estas corriendo App.py desde el directorio del proyecto
+from services.openai_service import chatgpt_test_token 
+
 from openai import RateLimitError
 
 def generar_proyectos(componentes):
@@ -112,14 +117,14 @@ def generar_proyectos(componentes):
         sql = extraer_sql(descripcion)
         if sql:
             sql_index[proyecto_id] = sql
-            with open(sql_index_path, "w") as f:
-                pyjson.dump(sql_index, f, indent=2)
+            with open(sql_index_path, "w", encoding="utf-8") as f:
+                pyjson.dump(sql_index, f, indent=2, ensure_ascii=False)
         sketch_path = os.path.join(output_dir, f"{proyecto_id}_sketch.ino")
         diagram_path = os.path.join(output_dir, f"{proyecto_id}_diagram.json")
         readme_path = os.path.join(output_dir, f"{proyecto_id}_README.md")
-        with open(sketch_path, "w") as f: f.write(sketch)
-        with open(diagram_path, "w") as f: f.write(diagram)
-        with open(readme_path, "w") as f: f.write(readme)
+        with open(sketch_path, "w", encoding="utf-8") as f: f.write(sketch)
+        with open(diagram_path, "w", encoding="utf-8") as f: f.write(diagram)
+        with open(readme_path, "w", encoding="utf-8") as f: f.write(readme)
         return {
             "id": proyecto_id,
             "nivel": nivel["nivel"],
