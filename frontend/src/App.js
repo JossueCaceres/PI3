@@ -8,10 +8,7 @@ function App() {
     <div>
       <h1>Generador de Circuitos Automáticos</h1>
       <UploadComponentes onResult={setResult} />
-      {/* Aquí se integrarán los componentes principales */
-      result && (
-        <pre>{JSON.stringify(result, null, 2)}</pre>
-      )}
+      
     </div>
   );
 }

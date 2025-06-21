@@ -19,7 +19,8 @@ function UploadComponentes({ onResult }) {
         const result = await uploadImages(files);
         setBackendResult(result);
         onResult && onResult(result);
-      } catch (err) {
+      } 
+      catch (err) {
         alert('Error uploading images');
       }
       setLoading(false);
