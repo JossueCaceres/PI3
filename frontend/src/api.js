@@ -13,3 +13,14 @@ export async function uploadImages(files) {
   return await response.json();
 }
 
+// POST: Send detected components to backend and get suggested projects
+export async function fetchProyectos(componentes) {
+  const response = await fetch('http://localhost:5000/api/componentes', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ componentes }),
+  });
+  if (!response.ok) throw new Error('Error en HTTP request para los proyectos');
+  return await response.json();
+}
+

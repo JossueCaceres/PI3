@@ -4,7 +4,7 @@ import uuid
 import re
 import json as pyjson
 from concurrent.futures import ThreadPoolExecutor
-#Si estas corriendo solo "generador.py"
+#Si estas corriendo solo "generador.py" desde el directorio del proyecto
 #from open_services import chatgpt_test_token 
 
 #Si estas corriendo App.py desde el directorio del proyecto

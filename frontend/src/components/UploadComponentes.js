@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { uploadImages } from '../api';
 
-function UploadComponentes({ onResult }) {
+function UploadComponentes({ onResult, onSolicitarProyectos, componentesDetectados, loadingProyectos }) {
   const [selectedFiles, setSelectedFiles] = useState([]);
   const [loading, setLoading] = useState(false);
   const [backendResult, setBackendResult] = useState(null);
@@ -66,6 +66,15 @@ function UploadComponentes({ onResult }) {
         <div>
           <h3>Componentes detectados:</h3>
           <pre>{JSON.stringify(backendResult.componentes, null, 2)}</pre>
+          {backendResult.componentes && (
+            <button
+              type="button"
+              onClick={onSolicitarProyectos}
+              disabled={loadingProyectos}
+            >
+              {loadingProyectos ? 'Buscando proyectos...' : 'Obtener Proyectos Recomendados'}
+            </button>
+          )}
         </div>
       )}
     </div>
