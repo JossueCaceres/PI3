@@ -22,7 +22,7 @@ function App() {
       const data = await fetchProyectos(componentes);
       setProyectos(data.proyectos);
     } catch (err) {
-      alert('Error al obtener proyectos');
+      alert('Error al obtener proyectos. Limite diario alcanzado. Intente de nuevo más tarde.');
     }
     setLoadingProyectos(false);
   };
