@@ -1,9 +1,4 @@
 {
-  "bb2eaabc-2e26-4322-a6a7-19e4ab91ce75": "INSERT INTO componentes (nombre, cantidad) VALUES \n('Arduino UNO', 1),\n('Protoboard', 1),\n('LED', 3),\n('Resistencia', 3),\n('Jumpers', 7);",
-  "f8fb3ba6-75e4-4fa9-a2ee-fd1a3b289a40": "INSERT INTO componentes (nombre, cantidad) VALUES \n('Arduino UNO', 1), \n('Protoboard', 1), \n('LED', 3), \n('Resistencia', 3), \n('Jumpers', 7);",
-  "d67d11be-2250-483b-a5d7-d3457665cf11": "INSERT INTO componentes (nombre, cantidad) VALUES  \n('Arduino UNO', 1),  \n('Protoboard', 1),  \n('LED', 3),  \n('Resistencia', 3),  \n('Jumpers', 7);",
-  "af999a04-f1bf-465b-8170-3bd18d32d48a": "INSERT INTO componentes (nombre, cantidad) VALUES  \n('Arduino UNO', 1),  \n('Protoboard', 1),  \n('LED', 3),  \n('Resistencia', 3),  \n('Jumpers', 10);",
-  "d8caa0f5-004b-40c0-b0d6-1a646d6809d4": "INSERT INTO componentes (nombre, cantidad) VALUES \n('Arduino UNO', 1),\n('Protoboard', 1),\n('LED', 3),\n('Resistencia', 3),\n('Jumpers', 6);",
-  "cf686f7d-d249-4a02-9ae6-097624bdb01f": "INSERT INTO componentes (nombre, cantidad) VALUES \n('Led', 4),\n('Resistor', 3),\n('breadboard', 1);",
-  "178744b2-9159-47ef-8c2c-394107fb0f57": "INSERT INTO componentes (nombre, cantidad) VALUES ('Led', 1), ('breadboard', 1);"
+  "1ce871ab-efe3-453d-a37e-e6695d422b1b": "INSERT INTO componentes (nombre, cantidad) VALUES \n('Led', 3),\n('Resistor', 2),\n('breadboard', 1);",
+  "4838c396-3f14-4991-877f-57764d6ead2e": "INSERT INTO componentes (nombre, cantidad) VALUES \n('Led', 5), \n('Resistor', 3), \n('breadboard', 1);"
 }
