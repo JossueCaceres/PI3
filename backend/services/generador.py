@@ -130,17 +130,26 @@ def generar_proyectos(componentes):
             "nivel": nivel["nivel"],
             "descripcion": descripcion,
             "archivos": {
-                "sketch": f"/descargar/{proyecto_id}_sketch.ino",
-                "diagrama": f"/descargar/{proyecto_id}_diagram.json",
-                "readme": f"/descargar/{proyecto_id}_README.md"
+                "sketch": f"{proyecto_id}_sketch.ino",
+                "diagrama": f"{proyecto_id}_diagram.json",
+                "readme": f"{proyecto_id}_README.md"
             },
             "sql": sql
         }
+    """
+    "sketch": f"/descargar/{proyecto_id}_sketch.ino",
+    "diagrama": f"/descargar/{proyecto_id}_diagram.json",
+    "readme": f"/descargar/{proyecto_id}_README.md"
+    """
 
     with ThreadPoolExecutor(max_workers=2) as executor:
         futuros = [executor.submit(generar_para_nivel, nivel, idx) for idx, nivel in enumerate(niveles)]
         for futuro in futuros:
             proyectos.append(futuro.result())
+    for proyecto in proyectos:
+        if proyecto.get("sql"):
+            print(f"SQL ({proyecto['nivel']}): {proyecto['sql']}")
+    print()
     return proyectos
 
 # Test manual

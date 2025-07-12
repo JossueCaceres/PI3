@@ -14,7 +14,8 @@ def ratelimit_handler(e):
 
 @app.route('/descargar/<filename>')
 def descargar_archivo(filename):
-    storage_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), 'storage'))
+    storage_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '../storage'))
+    print(f"Intentando descargar archivo: {filename} desde {storage_dir}")
     return send_from_directory(storage_dir, filename, as_attachment=True)
 
 if __name__ == "__main__":

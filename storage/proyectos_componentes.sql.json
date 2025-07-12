@@ -1,4 +1,3 @@
 {
-  "1ce871ab-efe3-453d-a37e-e6695d422b1b": "INSERT INTO componentes (nombre, cantidad) VALUES \n('Led', 3),\n('Resistor', 2),\n('breadboard', 1);",
-  "4838c396-3f14-4991-877f-57764d6ead2e": "INSERT INTO componentes (nombre, cantidad) VALUES \n('Led', 5), \n('Resistor', 3), \n('breadboard', 1);"
+  
 }
